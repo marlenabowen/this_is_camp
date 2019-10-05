@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_camper_path(@camper) %> |
+<%= link_to 'Back', campers_path %>
+
+<p>
+  <strong>CAMPER INFO</strong>
+</p>
+
+<p>
+  Preferred Named:
+  <%= @camper.preferred_name %>
+</p>
+<p>
+  Date of Birth:
+  <%= @camper.dob %>
+</p>
+<p>
+  Pronouns:
+  <%= @camper.pronouns %>
+</p>
+<p>
+  Essay:
+  <%= @camper.essay %>
+</p>
+<p>
+  Notes:
+  <%= @camper.notes %>
+</p>

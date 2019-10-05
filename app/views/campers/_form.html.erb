@@ -1,0 +1,45 @@
+<%= form_with model: @camper, local: true do |form| %>
+  <% if @camper.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@camper.errors.count, "error") %> prohibited
+        this camper from being saved:
+      </h2>
+      <ul>
+        <% @camper.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :preferred_name %><br>
+    <%= form.text_field :preferred_name %>
+  </p>
+
+  <p>
+    <%= form.label "Date of birth" %><br>
+    <%= form.text_area :dob %>
+  </p>
+
+  <p>
+    <%= form.label :pronouns %><br>
+    <%= form.text_area :pronouns %>
+  </p>
+
+  <p>
+    <%= form.label :essay %><br>
+    <%= form.text_area :essay %>
+  </p>
+
+  <p>
+    <%= form.label :notes %><br>
+    <%= form.text_area :notes %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
