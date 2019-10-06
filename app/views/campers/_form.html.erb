@@ -14,30 +14,62 @@
   <% end %>
 
   <p>
+    <strong>CAMPER INFO</strong>
+  </p><p>
+  <p>
     <%= form.label :preferred_name %><br>
     <%= form.text_field :preferred_name %>
-  </p>
-
-  <p>
+  </p><p>
     <%= form.label "Date of birth" %><br>
     <%= form.text_area :dob %>
-  </p>
-
-  <p>
+  </p><p>
     <%= form.label :pronouns %><br>
     <%= form.text_area :pronouns %>
-  </p>
-
-  <p>
+  </p><p>
     <%= form.label :essay %><br>
     <%= form.text_area :essay %>
+  </p><p>
+    <%= form.label :notes %><br>
+    <%= form.text_area :notes %>
+  </p><p>
+    <%= form.label :shirt_size %><br>
+    <%= form.text_area :shirt_size %>
   </p>
 
   <p>
-    <%= form.label :notes %><br>
-    <%= form.text_area :notes %>
-  </p>
-
+    <strong>FAMILY INFO</strong>
+  </p><p>
+  <p>
+    <%= form.label :guardian_name %><br>
+    <%= form.text_field :guardian_name %>
+  </p><p>
+    <%= form.label :primary_phone %><br>
+    <%= form.text_area :primary_phone %>
+  </p><p>
+    <%= form.label :secondary_phone %><br>
+    <%= form.text_area :secondary_phone %>
+  </p><p>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+  </p><p>
+    <%= form.label :secondary_email %><br>
+    <%= form.text_area :secondary_email %>
+  </p><p>
+  </p><p>
+    <%= form.label :street_address %><br>
+    <%= form.text_area :street_address %>
+  </p><p>
+    <%= form.label :second_address_line %><br>
+    <%= form.text_area :second_address_line %>
+  </p><p>
+    <%= form.label :city %><br>
+    <%= form.text_area :city %>
+  </p><p>
+    <%= form.label :state %><br>
+    <%= form.text_area :state %>
+  </p><p>
+    <%= form.label :zip %><br>
+    <%= form.text_area :zip %>
   <p>
     <%= form.submit %>
   </p>

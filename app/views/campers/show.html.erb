@@ -1,29 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_camper_path(@camper) %> |
-<%= link_to 'Back', campers_path %>
+<%= link_to 'Back', campers_path %> |
+<%= link_to 'Edit', edit_camper_path(@camper) %>
 
 <p>
   <strong>CAMPER INFO</strong>
-</p>
-
-<p>
-  Preferred Named:
+</p><p>
+  Preferred name:
   <%= @camper.preferred_name %>
-</p>
-<p>
-  Date of Birth:
+</p><p>
+  DOB:
   <%= @camper.dob %>
-</p>
-<p>
+</p><p>
   Pronouns:
   <%= @camper.pronouns %>
-</p>
-<p>
+</p><p>
   Essay:
   <%= @camper.essay %>
-</p>
-<p>
+</p><p>
   Notes:
   <%= @camper.notes %>
+</p><p>
+  Shirt size:
+  <%= @camper.shirt_size %>
 </p>
+
+<p><strong>FAMILY INFO</strong></p>
+<p>Guardian: <%= @camper.guardian_name %>
+
+<p>Contact info:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><%= @camper.primary_phone %></td>
+      <td><%= @camper.secondary_phone %></td>
+    </tr>
+    <tr>
+      <td><%= @camper.email %></td>
+      <td><%= @camper.secondary_email %></td>
+    <tr>
+      <td><%= @camper.street_address %></td>
+      <td><%= @camper.second_address_line %></td>
+      </td><td>
+        <%= @camper.city %>,
+        <%= @camper.state %>
+        <%= @camper.zip %>
+      </td>
+    </tr>
+  </tbody>
+</table>
