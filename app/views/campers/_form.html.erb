@@ -16,7 +16,6 @@
   <p>
     <strong>CAMPER INFO</strong>
   </p><p>
-  <p>
     <%= form.label :preferred_name %><br>
     <%= form.text_field :preferred_name %>
   </p><p>
@@ -39,7 +38,6 @@
   <p>
     <strong>FAMILY INFO</strong>
   </p><p>
-  <p>
     <%= form.label :guardian_name %><br>
     <%= form.text_field :guardian_name %>
   </p><p>
@@ -70,8 +68,95 @@
   </p><p>
     <%= form.label :zip %><br>
     <%= form.text_area :zip %>
+  </p><p>
+    <strong>INSTRUMENT INFO</strong>
+  </p><p>
+    <%= form.label "Instrument Assignment" %><br>
+    <%= form.text_field :instrument %>
+  </p><p>
+    <%= form.label "First choice" %><br>
+    <%= form.text_area :instrument_first_choice %>
+  </p><p>
+    <%= form.label "Experience with first choice instrument" %><br>
+    <%= form.text_area :instrument_first_choice_exp %>
+  </p><p>
+    <%= form.label "Second choice" %><br>
+    <%= form.text_area :instrument_second_choice %>
+  </p><p>
+    <%= form.label "Experience with second choice instrument" %><br>
+    <%= form.text_area :instrument_second_choice_exp %>
+  </p><p>
+    <%= form.label "Willing to play any instrument if on wait list?" %><br>
+    <%= form.select :waitlist, [['Yes', true], ['No', false]] %><br>
+  </p><p>
+    <%= form.label :additional_experience %>
+    <%= form.text_area :additional_exp %>
+  </p><p>
+    <%= form.label "Bringing an instrument to camp?" %><br>
+    <%= form.select :bringing_instrument, [['Yes', true], ['No', false]] %><br>
+  </p><p>
+    <%= form.label :personal_instrument %>
+    <%= form.text_area :personal_instrument %>
+  </p><p>
   <p>
+    <strong>MEDICAL INFO</strong>
+  </p><p>
+    <%= form.label :dietary_restrictions %><br>
+    <%= form.text_field :dietary_restrictions %>
+  </p><p>
+    <%= form.label :food_restrictions %><br>
+    <%= form.text_area :food_restrictions %>
+  </p><p>
+    <%= form.label :additional_restrictions %><br>
+    <%= form.text_area :additional_restrictions %>
+  </p><p>
+    <%= form.label :medical_conditions %><br>
+    <%= form.text_area :medical_conditions %>
+  </p><p>
+    <%= form.label :mental_health %><br>
+    <%= form.text_area :mental_health %>
+  </p><p>
+  <p>
+    <strong>SOCIOECONOMIC INFO</strong>
+  </p><p>
+    <%= form.label :language %><br>
+    <%= form.text_field :language %>
+  </p><p>
+    <%= form.label "Household income" %><br>
+    <%= form.text_area :income %>
+  </p><p>
+    <%= form.label "Number of adults at home" %><br>
+    <%= form.text_area :adults %>
+  </p><p>
+    <%= form.label "Number of children in home" %><br>
+    <%= form.text_area :children %>
+  </p><p>
     <%= form.submit %>
   </p>
-
+  <p>
+  <strong>ACCEPTANCE CRITERIA</strong>
+  </p><p>
+    <%= form.label :age_group%><br>
+    <%= form.select :age_group, [['8-10', 'Stix'], ['11-12', 'Pix'], ['13-17', 'Mix']] %>
+  </p><p>
+    <%= form.label "Interested in volunteering?" %><br>
+    <%= form.select :volunteering, [['Yes', true], ['No', false]] %><br>
+  </p><p>
+    <%= form.label "Interested in merchandise?" %><br>
+    <%= form.select :merchandise, [['Yes', true], ['No', false]] %><br>
+  </p><p>
+    <%= form.label :ethnicity %><br>
+    <%= form.text_area :ethnicity %>
+  </p><p>
+    <%= form.label "Receiving reduced fee lunch at school?"%><br>
+    <%= form.select :reduced_lunch, [['Yes', true], ['No', false]] %><br>
+  </p><p>
+    <%= form.label :monetary_commitment %><br>
+    <%= form.text_area :monetary_commitment %>
+  </p><p>
+    <%= form.label :years_attended %><br>
+    <%= form.text_area :years_attended %>
+  </p><p>
+    <%= form.submit %>
+  </p>
 <% end %>

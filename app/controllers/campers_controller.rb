@@ -77,7 +77,31 @@ class CampersController < ApplicationController
       :second_address_line,
       :city,
       :state,
-      :zip
+      :zip,
+      :instrument,
+      :instrument_first_choice,
+      :instrument_first_choice_exp,
+      :instrument_second_choice,
+      :instrument_second_choice_exp,
+      :waitlist,
+      :additional_exp,
+      :bringing_instrument,
+      :personal_instrument,
+      :dietary_restrictions,
+      :food_restrictions,
+      :additional_restrictions,
+      :mental_health,
+      :language,
+      :income,
+      :adults,
+      :children,
+      :age_group,
+      :volunteering,
+      :merchandise,
+      :ethnicity,
+      :reduced_lunch,
+      :monetary_commitment,
+      :years_attended
     )
   end
 end
